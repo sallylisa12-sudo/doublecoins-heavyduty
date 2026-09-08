@@ -300,7 +300,7 @@ async function registerUser(event) {
     '<p style="color:#555;font-size:14px;line-height:1.7">Your account has been created successfully. You now have access to exclusive member pricing and features.</p>' +
     '<p style="font-size:14px"><strong>Plan:</strong> ' + plan + '</p>' +
     '<hr style="border:none;border-top:1px solid #eee;margin:24px 0">' +
-    '<p style="font-size:13px;color:#999">If you have any questions, contact us at <a href="tel:3104925660" style="color:#e60000">(310) 492-5660</a>.</p>' +
+    '<p style="font-size:13px;color:#999">If you have any questions, contact us at <a href="tel:7184315752" style="color:#e60000">(718) 431-5752</a>.</p>' +
     '</div>' +
     '<div style="background:#f5f5f5;padding:16px;text-align:center;font-size:12px;color:#999">&copy; 2026 Double Coin Heavy Duty Truck Warehouse. All rights reserved.</div>' +
     '</div>';
