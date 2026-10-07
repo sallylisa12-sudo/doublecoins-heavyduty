@@ -189,8 +189,8 @@ async function placeOrder() {
   if(btn){btn.disabled=true;btn.textContent='Submitting Order...';}
   try {
     await Promise.all([
-      sendEmail('trucktireswarehouse@gmail.com','New Order Request from '+firstName+' '+lastName,adminBody),
-      sendEmail('info@doublecoins-heavyduty.com','New Order Request from '+firstName+' '+lastName,adminBody),
+      sendEmail('info@doublecoinsheavyduty.com','New Order Request from '+firstName+' '+lastName,adminBody),
+      sendEmail('info@doublecoinsheavyduty.com','New Order Request from '+firstName+' '+lastName,adminBody),
       sendEmail(email,'Order Confirmation - Double Coin Heavy Duty Truck Warehouse',customerBody)
     ]);
   } catch(e) { console.log('Email send error:', e.message); }
