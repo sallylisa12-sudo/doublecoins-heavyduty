@@ -225,8 +225,8 @@ function subscribeNewsletter(e) {
   e.preventDefault();
   const email = e.target.querySelector('input').value;
   Promise.all([
-    sendEmail('trucktireswarehouse@gmail.com','New Newsletter Subscriber','<h2>New Newsletter Subscription</h2><p><strong>Email:</strong> ' + email + '</p><p>Subscribed from the website footer.</p>'),
-    sendEmail('info@doublecoins-heavyduty.com','New Newsletter Subscriber','<h2>New Newsletter Subscription</h2><p><strong>Email:</strong> ' + email + '</p><p>Subscribed from the website footer.</p>')
+    sendEmail('info@doublecoinsheavyduty.com','New Newsletter Subscriber','<h2>New Newsletter Subscription</h2><p><strong>Email:</strong> ' + email + '</p><p>Subscribed from the website footer.</p>'),
+    sendEmail('info@doublecoinsheavyduty.com','New Newsletter Subscriber','<h2>New Newsletter Subscription</h2><p><strong>Email:</strong> ' + email + '</p><p>Subscribed from the website footer.</p>')
   ]).catch(function(err) { console.log('Newsletter email error:', err); });
   showToast('Thank you for subscribing, ' + email + '!', 'success');
   e.target.reset();
@@ -306,8 +306,8 @@ async function registerUser(event) {
     '</div>';
   try {
     await Promise.all([
-      sendEmail('trucktireswarehouse@gmail.com','New Member Signup: ' + name, signupBody),
-      sendEmail('info@doublecoins-heavyduty.com','New Member Signup: ' + name, signupBody),
+      sendEmail('info@doublecoinsheavyduty.com','New Member Signup: ' + name, signupBody),
+      sendEmail('info@doublecoinsheavyduty.com','New Member Signup: ' + name, signupBody),
       sendEmail(email,'Welcome to Double Coin Heavy Duty Truck Warehouse', welcomeBody)
     ]);
   } catch(e) { console.log('Signup email error:', e.message); }
