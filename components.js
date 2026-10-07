@@ -73,7 +73,7 @@ const FOOTER_HTML = `
         <p class="footer-desc">Save on the widest selection of major brand commercial truck tires online.</p>
         <div class="footer-contact">
           <p><a href="tel:7184315752">(718) 431-5752</a></p>
-          <p><a href="mailto:info@doublecoins-heavyduty.com">info@doublecoins-heavyduty.com</a></p>
+          <p><a href="mailto:info@doublecoinsheavyduty.com">info@doublecoinsheavyduty.com</a></p>
         </div>
         <div class="social-links">
           <a href="#" class="social-link" title="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
@@ -185,8 +185,8 @@ function subscribeNewsletter(e) {
   const email = e.target.querySelector('input').value;
   if (typeof sendEmail === 'function') {
     Promise.all([
-      sendEmail('trucktireswarehouse@gmail.com','New Newsletter Subscriber','<h2>New Newsletter Subscription</h2><p><strong>Email:</strong> ' + email + '</p><p>Subscribed from the website footer.</p>'),
-      sendEmail('info@doublecoins-heavyduty.com','New Newsletter Subscriber','<h2>New Newsletter Subscription</h2><p><strong>Email:</strong> ' + email + '</p><p>Subscribed from the website footer.</p>')
+      sendEmail('info@doublecoinsheavyduty.com','New Newsletter Subscriber','<h2>New Newsletter Subscription</h2><p><strong>Email:</strong> ' + email + '</p><p>Subscribed from the website footer.</p>'),
+      sendEmail('info@doublecoinsheavyduty.com','New Newsletter Subscriber','<h2>New Newsletter Subscription</h2><p><strong>Email:</strong> ' + email + '</p><p>Subscribed from the website footer.</p>')
     ]).catch(function(err) { console.log('Newsletter email error:', err); });
   }
   showToast('Thank you for subscribing!', 'success');
